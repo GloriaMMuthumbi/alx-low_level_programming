@@ -1,9 +1,16 @@
 #include <stdio.h>
-/*
-*  This is the function main() that prints the string and returns 0.
-*/
+
+/**
+ * main - Entry point
+ *
+ * Description: This is the main function that prints the message
+ *
+ *
+ * Return: 0 (Success)
+ */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+    puts("\"Programming is like building a multilingual puzzle");
+    return (0);
 }
+
