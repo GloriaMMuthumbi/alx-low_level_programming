@@ -4,8 +4,8 @@
 
 #include <stdio.h>
 /**
- * main - the main function prints out the size of various types on
- * the computer it is compiled on.
+ * main - the main function prints out the size
+ * of various types on the computer it is compiled on.
  *
  * return: Returns 0.
  */
