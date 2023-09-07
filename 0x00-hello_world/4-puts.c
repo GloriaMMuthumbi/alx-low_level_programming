@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ *main - Entry point
  *
- * Description: This is the main function that prints the message
+ *Description: This is the main function that prints the message
  *
  *
- * Return: 0 (Success)
+ *Return: 0 (Success)
  */
 int main(void)
 {
