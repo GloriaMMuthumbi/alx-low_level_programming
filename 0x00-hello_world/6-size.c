@@ -7,7 +7,8 @@
  * main - the main function prints out the size
  * of various types on the computer it is compiled on.
  *
- * return: always 0.
+ * Return: Always 0.
+ * 
  */
 int main(void)
 {
