@@ -1,4 +1,4 @@
-#include <strdlib.h>
+#include <stdlib.h>
 
 /**
  * main - this main function prints the alphabet
