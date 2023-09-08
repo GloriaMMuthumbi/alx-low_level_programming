@@ -3,7 +3,7 @@
 
 /**
  * main - this main function prints the alphabet
- * in lowercase without using printf.it uses for
+ * in lowercase except q and e without using printf.it uses for
  * for loop and putchar only appears twice.
  *
  * Return: Always 0.
