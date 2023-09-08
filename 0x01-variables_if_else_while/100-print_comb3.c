@@ -22,8 +22,10 @@ int main(void)
 				putchar(',');
 				putchar(' ');
 			}
+
 			putchar(digit1 + '0');
 		       	putchar(digit2 + '0');
+			
 			first_combination = 0;
 		}
 	}
