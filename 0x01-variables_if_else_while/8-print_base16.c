@@ -14,7 +14,8 @@ int main(void)
 
 	while (n <= 'f')
 	{
-		putchar(n);
+		if ((n >='0' && n <= '9') || (n >= 'a' && n <= 'f'))
+			putchar(n);
 		n++;
 	}
 
