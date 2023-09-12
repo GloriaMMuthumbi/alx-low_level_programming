@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * times_table: check description below
+ * times_table - check description below
  *
  * Description: it prints the table of 9 from 0.
  *
