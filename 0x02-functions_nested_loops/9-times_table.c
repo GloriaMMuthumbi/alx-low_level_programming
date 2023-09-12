@@ -2,7 +2,7 @@
 /**
  * times_table: check description below
  *
- * description: it prints the table of 9 from 0.
+ * Description: it prints the table of 9 from 0.
  *
  * Return: it doens't return anything.
  */
