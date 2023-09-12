@@ -1,10 +1,6 @@
-/*
- * this function takes a string as input
- */
-
 #ifndef MAIN_H
 #define MAIN_H
 
-int _putchar(char * word);
+int _putchar(char l);
 
 #endif /* MAIN_H */
