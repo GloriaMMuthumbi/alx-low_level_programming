@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _putahcr() - this function prints the alphabet
+ * print_alphabe()) - this function prints the alphabet
  * in lowercase followed by a new line.
  *
  * Return: Always 0.
