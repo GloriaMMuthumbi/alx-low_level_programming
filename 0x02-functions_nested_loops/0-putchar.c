@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-using namespace std;
 
 /*
  * main - this function uses the _putchar() to print.
