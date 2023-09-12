@@ -3,29 +3,22 @@
 using namespace std;
 
 /*
- * _putchar funtion - this function prints "_putchar" without using
- * printf or puts followed by a new line.
- *
- * main - this function uses the _putchar() to print the input
+ * main - this function uses the _putchar() to print.
  *
  * Return: Always 0.
  */
 
-int _putchar(char * word)
-{
-	int i;
-	
-	for(i = 0; i < word.length() - 1; i++)
-		putchar(word[i]);
-	
-	putchar('\n');
-}
-
-
 int main(void)
 {
-	char * word = "_putchar";
-	_putchar(word);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
 	return 0;
 }
