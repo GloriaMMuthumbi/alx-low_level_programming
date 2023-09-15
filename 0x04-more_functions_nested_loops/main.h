@@ -4,6 +4,7 @@
  * main - this is a header file for the prototypes
  */
 
+int _putchar(char l);
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
