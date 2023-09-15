@@ -4,6 +4,6 @@
  * main - this is a header file for the prototypes
  */
 
-void print_numbers(void);
+int _isupper(int c);
 
-#endif /*Main_H*/
+#endif /*MAIN_H*/
