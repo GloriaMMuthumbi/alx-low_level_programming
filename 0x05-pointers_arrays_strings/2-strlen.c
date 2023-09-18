@@ -9,7 +9,7 @@ int _strlen(char *s)
 {
 	int i;
 	int count = 0;
-	for (i = 0; i < char.length; i++)
+	for (i = 0; i < s.length; i++)
 		count ++;
 
 	return (count);
