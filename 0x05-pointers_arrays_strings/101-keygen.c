@@ -14,16 +14,16 @@
 
 int main()
 {
+	const char* charset = "abcdefghijklmnopqrstuvwxyz0123456789";
+	char password[PASSWORD_LENGTH + 1];
+	int charlength = strlen(charset);
+	int i;
+
 	srand(time(NULL));
 
-	const char* charset = "abcdefghijklmnopqrstuvwxyz0123456789";
-
-	char pass[PASSWORD_LENGTH + 1];
-	int charlength = strlen(charset);
-
-	for (int i = 0; i < PASSWORD_LENGTH; i++)
+	for (i = 0; i < PASSWORD_LENGTH; i++)
 	{
-		int randomIndex = rand() % charsetLength;
+		int randomIndex = rand() % charlength;
 		password[i] = charset[randomIndex];
 	}
 
