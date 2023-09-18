@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * rev_string - it reverses a string
  * @s: the string to be reversed
