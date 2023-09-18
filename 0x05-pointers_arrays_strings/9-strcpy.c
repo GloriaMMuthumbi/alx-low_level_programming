@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strcpy - copies the string including the
  * terminating null byte to the buffer
@@ -9,10 +10,12 @@
  */
 char *_strcpy(char *dest, char *src)
 {
+	char = *og_dest;
+	
 	if (dest == NULL || src == NULL)
 		return NULL;
 
-	char *og_dest = dest;
+	*og_dest = dest;
 
 	while (*src != '\0')
 	{
