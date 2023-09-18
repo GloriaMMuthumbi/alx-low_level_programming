@@ -11,7 +11,7 @@
 char *_strcpy(char *dest, char *src)
 {
 	char *og_dest = dest;
-	
+
 	if (dest == NULL || src == NULL)
 		return NULL;
 
@@ -20,6 +20,7 @@ char *_strcpy(char *dest, char *src)
 		*dest = *src;
 		dest++;
 		src++;
+		return;
 	}
 
 	*dest = '\0';
