@@ -5,43 +5,26 @@
  *
  * Return: returns nothing
  */
-#include "main.h"
-
 void rev_string(char *s)
 {
-	int l = 0;
-	int st = 0;
-	int e = 0;
-	char temp;
-	
-	while (s[l] != '\0')
-		l++;
-	
-	e = l - 1;
-	
-	while (st < e)
+	int a, len;
+
+	char *begin, *end = s;
+
+	for (a = 0; s[a] != '\0' && s[a + 1] != '\0'; a++)
 	{
-		temp = s[st];
-		s[st] = s[e];
-		s[e] = temp;
-		
-		st++;
-		e--;
+		end++;
 	}
-	
-	while (*s != '\0')
+	len = a + 1;
+	begin = s;
+	for (a = 0; a < len / 2; a++)
 	{
-		_putchar(*s);
-		s++;
+		char x;
+		x = *end;
+		*end = *begin;
+		*begin = x;
+		begin++;
+		end--;
 	}
-	
-	s -= l;
-	
-	while (*s != '\0')
-	{
-		_putchar(*s);
-		s++;
-	}
-	
-	_putchar('\n');
+	end[len + 1] = '\0';
 }
