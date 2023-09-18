@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stddef.h>
 /**
  * print_array - it prints n elements of an array of integers
  * where the numbers are seperate by a comma followed by a space
@@ -20,7 +22,7 @@ void print_array(int *a, int n)
 		printf("%d", a[i]);
 
 		if (i < n -1)
-			print(", ");
+			printf(", ");
 	}
 
 	printf("\n");
