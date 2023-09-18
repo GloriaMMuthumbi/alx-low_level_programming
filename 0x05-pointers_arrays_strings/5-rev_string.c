@@ -33,7 +33,7 @@ void rev_string(char *s)
 		s++;
 	}
 
-	s -= length;
+	s -= l;
 	while (*s != '\0')
 	{
 		_putchar(*s);
