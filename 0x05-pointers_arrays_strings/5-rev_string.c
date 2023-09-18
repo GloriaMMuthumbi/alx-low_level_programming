@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stddef.h>
+#include <stdio.h>
 /**
  * rev_string - it reverses a string
  * @s: the string to be reversed
@@ -8,30 +8,24 @@
  */
 void rev_string(char *s)
 {
-	int length = 0;
-	int start = 0;
-	int end = length - 1;
-	char temp;
-	int i;
+	int a, len;
 
-	if (s == NULL)
-		return;
+	char *begin, *end = s;
 
-	while (s[length] != '\0')
-		length++;
-
-	while (start < end)
+	for (a = 0; s[a] != '\0' && s[a + 1] != '\0'; a++)
 	{
-		temp = s[start];
-		s[start] = s[end];
-		s[end] = temp;
-
-		start++;
+		end++;
+	}
+	len = a + 1;
+	begin = s;
+	for (a = 0; a < len / 2; a++)
+	{
+		char x;
+		x = *end;
+		*end = *begin;
+		*begin = x;
+		begin++;
 		end--;
 	}
-
-	for (i = 0; i < length; i++)
-		_putchar(s[i]);
-
-	_putchar('\n');
+	end[len + 1] = '\0';
 }
