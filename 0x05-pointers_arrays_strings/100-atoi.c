@@ -3,9 +3,9 @@
  * _atoi - it converts a string into an integer
  * @s: the string to be converted
  *
- * Return: returns nothing
+ * Return: returns the integer
  */
-void _atoi(char *s)
+int _atoi(char *s)
 {
 	int c = 0;
 	int min = 1;
@@ -21,7 +21,7 @@ void _atoi(char *s)
 		{
 			isi = 1;
 			ni = (ni * 10) + (s[c] - '0');
-			c++
+			c++;
 		}
 
 		if (isi == 1)
