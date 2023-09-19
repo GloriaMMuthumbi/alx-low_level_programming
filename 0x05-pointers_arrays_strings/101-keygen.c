@@ -14,7 +14,7 @@
 
 int main()
 {
-	const char* charset = "abcdefghijklmnopqrstuvwxyz0123456789";
+	const char* charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 	char password[PASSWORD_LENGTH + 1];
 	int charlength = strlen(charset);
 	int i;
