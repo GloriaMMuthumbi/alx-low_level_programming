@@ -1,5 +1,6 @@
 #include "main.h"
 /**
+ *
  * _atoi - it converts a string into an integer
  * @s: the string to be converted
  *
@@ -12,7 +13,7 @@ int _atoi(char *s)
 	int isi = 0;
 	unsigned int ni = 0;
 
-	while(s[c])
+	while (s[c])
 	{
 		if (s[c] == 45)
 			min *= -1;
@@ -32,4 +33,4 @@ int _atoi(char *s)
 
 	ni *= min;
 	return (ni);
-}	
+}
