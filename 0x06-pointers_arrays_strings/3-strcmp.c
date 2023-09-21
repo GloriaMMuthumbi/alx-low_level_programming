@@ -5,8 +5,8 @@
  * @s2: second string to be compared
  *
  * Return: returns 0 if value is 0,
- * 1 if non-matching first character in s1 has a larger
- * value than the one in s2 and -1 if non-matching
+ * 15 if non-matching first character in s1 has a larger
+ * value than the one in s2 and -15 if non-matching
  * first character in s1 has a smaller value
  * than the one in s2
  */
@@ -17,9 +17,9 @@ int _strcmp(char *s1, char *s2)
 		if (*s1 != *s2)
 		{
 			if ((int)(*s1) < (int)(*s2))
-				return (-1);
+				return (-15);
 			else if ((int)(*s1) > (int)(*s2))
-				return (1);
+				return (15);
 			else
 				return (0);
 		}
