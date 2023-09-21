@@ -19,7 +19,7 @@ int _strcmp(char *s1, char *s2)
 			if ((int)(*s1) < (int)(*s2))
 				return (-1);
 			else if ((int)(*s1) > (int)(*s2))
-                                return (1);
+				return (1);
 			else
 				return (0);
 		}
