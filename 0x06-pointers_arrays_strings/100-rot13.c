@@ -5,7 +5,7 @@
  *
  * Return: returns the encoded string
  */
-char *rot13(char *)
+char *rot13(char *str)
 {
 	int i, j;
 	char a[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
