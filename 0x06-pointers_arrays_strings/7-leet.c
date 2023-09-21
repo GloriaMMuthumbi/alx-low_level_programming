@@ -7,34 +7,24 @@
  */
 char *leet(char *str)
 {
-	int i = 0;
+	int stringCount, leetCount;
+	char leetLetters[] = "aAeEoOtTlL";
+	char leetNums[] = "4433007711";
 
-	while (str[i])
+	stringCount = 0;
+	while (str[stringCount] != '\0')
+
 	{
-		char c = str[i];
-		int is_lower = (c >= 'a' && c <= 'z');
-		int is_upper = (c >= 'A' && c <= 'Z');
-
-		if (is_lower || is_upper)
+		leetCount = 0;
+		while (leetCount < 10)
 		{
-			int is_a_A = (c == 'a' || c == 'A');
-			int is_e_E = (c == 'e' || c == 'E');
-			int is_o_O = (c == 'o' || c == 'O');
-			int is_t_T = (c == 't' || c == 'T');
-			int is_l_L = (c == 'l' || c == 'L');
-
-			if (is_a_A)
-				str[i] = '4';
-			else if (is_e_E)
-				str[i] = '3';
-			else if (is_o_O)
-				str[i] = '0';
-			else if (is_t_T)
-				str[i] = '7';
-			else if (is_l_L)
-				str[i] = '1';
+			if (leetLetters[leetCount] == str[stringCount])
+			{
+				str[stringCount] = leetNums[leetCount];
+			}
+			leetCount++;
 		}
-		i++;
+		stringCount++;
 	}
 	return (str);
 }
