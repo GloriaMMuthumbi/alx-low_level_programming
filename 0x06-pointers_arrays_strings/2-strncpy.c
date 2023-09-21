@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strncat - it concatenates two strings
+ * _strncpy - it concatenates two strings
  * @dest: string to be concatenated to
  * @src: string to concatenate
  * @n: the number of characters to be concatenated
@@ -9,7 +9,6 @@
  * Return: returns the pointer to the resulting
  * string dest
  */
-
 char *_strncpy(char *dest, char *src, int n)
 {
 	char *dest_address = dest;
@@ -21,7 +20,6 @@ char *_strncpy(char *dest, char *src, int n)
 		src++;
 		n--;
 	}
-
 
 	while (n > 0)
 	{
