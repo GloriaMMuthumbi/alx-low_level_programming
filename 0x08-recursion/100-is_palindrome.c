@@ -14,6 +14,7 @@ int recursive_is_palindrome(char *string, int s, int e);
 int is_palindrome(char *s)
 {
 	int length = strlen(s);
+	
 	if (length <= 1)
 		return (1);
 
