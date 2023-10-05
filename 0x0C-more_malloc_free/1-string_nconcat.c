@@ -4,7 +4,7 @@
  * string_nconcat - concatenates two strings
  * @s1: first string
  * @s2: second string
- * @n - number of characters to concatenate from s2
+ * @n: number of characters to concatenate from s2
  *
  * Return: returns a pointer on success. on fail, returns
  * NULL. if NULL is passed, treat as empty string
