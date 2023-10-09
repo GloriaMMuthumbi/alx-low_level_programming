@@ -13,27 +13,42 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *new_dog_ptr;
-	char *name_copy, *owner_copy;
+	dog_t *p_dog;
+	int i, lname, lowner;
 
-	new_dog_ptr = malloc(sizeof(dog_t));
-	if (new_dog_ptr == NULL)
-		return (NULL);
-
-	name_copy = strdup(name);
-	owner_copy = strdup(owner);
-
-	if (name_copy == NULL || owner_copy == NULL)
+	p_dog = malloc(sizeof(*p_dog));
+	if (p_dog == NULL || !(name) || !(owner))
 	{
-		free(name_copy);
-		free(owner_copy);
-		free(new_dog_ptr);
+		free(p_dog);
 		return (NULL);
 	}
 
-	new_dog_ptr->name = name_copy;
-	new_dog_ptr->age = age;
-	new_dog_ptr->owner = owner_copy;
+	for (lname = 0; name[lname]; lname++)
+		;
 
-	return (new_dog_ptr);
+	for (lowner = 0; owner[lowner]; lowner++)
+		;
+
+	p_dog->name = malloc(lname + 1);
+	p_dog->owner = malloc(lowner + 1);
+
+	if (!(p_dog->name) || !(p_dog->owner))
+	{
+		free(p_dog->owner);
+		free(p_dog->name);
+		free(p_dog);
+		return (NULL);
+	}
+
+	for (i = 0; i < lname; i++)
+		p_dog->name[i] = name[i];
+	p_dog->name[i] = '\0';
+
+	p_dog->age = age;
+
+	for (i = 0; i < lowner; i++)
+		p_dog->owner[i] = owner[i];
+	p_dog->owner[i] = '\0';
+
+	return (p_dog);
 }
