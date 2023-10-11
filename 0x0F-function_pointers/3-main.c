@@ -2,9 +2,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - 
- * @argc:
- * @argv:
+ * main - main funciton
+ * @argc: number of arguments
+ * @argv: vector of argumnets
  *
  * Return: returns success or error if fails
  */
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if(argv[2][1] != '\0')
+	if (argv[2][1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
-	res = (get_op_func(argv[2]))(a,b);
+	res = (get_op_func(argv[2]))(a, b);
 	printf("%d\n", res);
 	return (0);
 }
