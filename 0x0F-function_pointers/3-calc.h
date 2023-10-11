@@ -1,9 +1,5 @@
-#include <stddef.h>
-#include <stdio.h>
-#include <stdlib.h>
-
-#ifndef _HEADER_H
-#define _HEADER_H
+#ifndef _HEADER_
+#define _HEADER_
 /**
  * struct op - structure op
  *
