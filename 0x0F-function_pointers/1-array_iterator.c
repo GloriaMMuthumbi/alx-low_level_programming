@@ -4,6 +4,7 @@
  * parameter on each element of an array
  * @size: size of the array
  * @action: pointer to the function you need to use
+ * @array: array of elements
  *
  * Return: returns nothing
  */
