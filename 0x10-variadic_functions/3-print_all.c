@@ -24,17 +24,20 @@ void print_all(const char * const format, ...)
 	{
 		if (format[i] == 'c')
 			printf("%s%c", separator, va_arg(args, int));
-		else if (format[i] == 'i')
+		
+		if (format[i] == 'i')
 		{
 			num = va_arg(args, int);
 			printf("%s%d", separator, num);
 		}
-		else if (format[i] == 'f')
+		
+		if (format[i] == 'f')
 		{
 			num_floats = va_arg(args, double);
 			printf("%s%f", separator, num_floats);
 		}
-		else if (format[i] == 's')
+		
+		if (format[i] == 's')
 		{
 			my_str = va_arg(args, char *);
 			if (my_str == NULL)
