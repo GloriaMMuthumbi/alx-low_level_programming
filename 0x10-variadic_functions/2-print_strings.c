@@ -4,7 +4,7 @@
 /**
  * print_strings - Prints strings seperated by a seperator
  * followed by a new line
- * @seprator: string to seperate the strings
+ * @separator: string to seperate the strings
  * @n: number of strings to the function
  * @...: array of string arguments
  *
