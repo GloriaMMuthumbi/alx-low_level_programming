@@ -1,7 +1,9 @@
 #ifndef _LISTS_H_
 #define _LISTS_H_
 
-#include <stdarg.h>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 
 /**
  * struct list_t - defines list_t stucture
@@ -12,7 +14,7 @@
 typedef struct list_t
 {
 	char *str;
-	size_t len;
+	unsigned int len;
 	struct list_t *next;
 } list_t;
 
