@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: cp %s %s\n", fd_from, fd_to);
+		dprintf(STDERR_FILENO, "Usage: cp fd_from fd_to\n");
 		exit(97);
 	}
 
