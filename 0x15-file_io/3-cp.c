@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 			dprintf(STDERR_FILENO, num == -1 ? "Error: Can't ead from file %s\n"
 					: "Error: Can't write to file %s\n",
 					num == -1 ? argv[1] : argv[2]);
-			exit(98 + (num == -1));
+			exit(99);
 		}
 	}
 
