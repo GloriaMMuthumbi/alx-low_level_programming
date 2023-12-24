@@ -138,7 +138,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 void shash_table_print(const shash_table_t *ht)
 {
 	shash_node_t *node;
-	
+
 	if (ht == NULL)
 		return;
 	node = ht->shead;
