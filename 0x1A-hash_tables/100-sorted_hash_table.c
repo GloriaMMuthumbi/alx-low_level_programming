@@ -33,10 +33,10 @@ shash_table_t *shash_table_create(unsigned long int size)
 }
 
 /**
- * shash_table_get - retrienves value of key in sorted hash table
+ * shash_table_get - retrieves value of key in sorted hash table
  * @ht: hash table
  * @key: key to get value
- * Reutrn: returns value associated with key. otherwise NULL if key is
+ * Return: returns value associated with key. otherwise NULL if key is
  * not matched
  */
 char *shash_table_get(const shash_table_t *ht, const char *key)
