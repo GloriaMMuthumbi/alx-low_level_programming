@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Module that represents the perimeter of the island"""i
 
 
