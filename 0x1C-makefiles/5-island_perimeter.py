@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that represents the perimeter of the island"""i
+"""Module that defines a function to find the perimeter of the island"""i
 
 
 def island_perimeter(grid):
